@@ -17,7 +17,7 @@ status_check
 set_permissions
 
 echo -e "${YC}Copy Service File${NC}"
-cp ${service_name}.service /etc/systemd/system/${service_name}.service &>>$OUTPUT
+cp /home/ec2-user/wmp-shell/${service_name}.service/etc/systemd/system/${service_name}.service &>>$OUTPUT
 status_check
 
 start_service
