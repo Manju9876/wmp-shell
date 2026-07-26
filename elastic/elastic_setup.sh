@@ -35,7 +35,7 @@ echo "Install logstash"
 dnf install -y --enablerepo=elasticsearch logstash
 
 echo "Copy logstash conf"
-cp "$SCRIPT_DIR/logstash.conf" /etc/logstash/logstash.conf
+cp "$SCRIPT_DIR/logstash.conf" /etc/logstash/conf.d/logstash.conf
 
 echo "Start Logstash"
 systemctl daemon-reload
